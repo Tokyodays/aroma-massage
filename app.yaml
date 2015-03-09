@@ -1,0 +1,27 @@
+application: aroma-massage
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+#- url: /css
+#  static_dir: dist/css
+
+#- url: /fonts
+#  static_dir: dist/fonts
+
+#- url: /images
+#  static_dir: dist/images
+
+#- url: /js
+#  static_dir: dist/js
+
+#- url: /
+#  static_dir: dist
+
+- url: /(.*/)?
+  script: index.py
+
+- url: /(.*)
+  static_files: static/\1
+  upload: static/(.*)
