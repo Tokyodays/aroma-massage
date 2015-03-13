@@ -10,6 +10,8 @@ html, body {
 	height: 100%;
 	width: 100%;
 	font-size: 15px;
+	color: $color_font;
+	background-color: $color_base;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: normal;
@@ -139,149 +141,101 @@ footer {
 	background: #{$color_sub1} url(/images/irongrip.png) repeat;
 	@include box-shadow(rgba(0, 0, 0, 0.6) 0 5px 10px inset);
 }
+.background {
+	background-color: #fff;
+	padding: 100px 0;
+}
+.line {
+	margin: 100px auto;
+	text-align: center;
+}
+.footlogo {
+	text-align: center;
+
+}
 section {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-top: 3px solid $color_main;
 	h1 {
-		position:relative;
-		padding:5px;
-		font-size:30px;
-		line-height: 1.6;
-		text-align:left;
-		color:$color_second1;
-		text-shadow:1px 1px 0 rgba(255,255,255,1);
-		box-shadow:	0 5px 7px -4px rgba(0,0,0,0.3) inset;
-		margin-bottom: 20px;
-		margin-top: 0;
-		background-color: rgba(0,0,0,0.05);
+		background-size: cover;
+		height: 250px;
+		background-position: center center;
+		text-align: center;
+		line-height: 250px;
+		color: #fff;
+		text-shadow: 0px 0px 3px $color_font;
+		white-space: nowrap;
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+			height: 150px;
+			line-height: 150px;
+		}
 	}
-}
-#COURSE {
-	background: $color_base url(/images/greyfloral.png) repeat;
-	div.header {
-	    margin: 40px auto;
-	    padding: 20px;
-	    position:relative;
-	    background: $color_base url(/images/lightpaperfibers.png) repeat;
-	    border: 1px solid #ccc;
-	    @include box-shadow(rgba(0,0,0, 0.1) 1px 1px 4px);
-	    @include border-bottom-right-radius(30px 10px);
-    	&:after, &:before {
- 	        content: "";
-		    position:absolute;
-		    width: 130px;
-		    height: 40px;
-		    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
-		    border-left: 1px dashed rgba(0, 0, 0, 0.1);
-		    border-right: 1px dashed rgba(0, 0, 0, 0.1);
-		    @include box-shadow(rgba(0, 0, 0, 0.2) 0px 0px 12px);
-	   	}
-    	&:after {
-		    top:0;
-		    left: 0;
-		    @include transform(rotate(-30deg) skew(0,0) translate(-30px,-20px));
-        }
-        &:before {
-		    top:0;
-		    right: 0;
-		    @include transform(rotate(30deg) skew(0,0) translate(30px,-20px));
-        }
-        div.row {
-        	margin-bottom: 0;
-        }
-        h4 {
-        	color: $color_main;
-        	@include fontsize(30);
-        	text-align: center;
-			text-shadow:1px 1px 0 rgba(0,0,0,0.2);
-        }
-        table.table {
-        	margin-bottom: 0;
-        	thead th, thead td {
-        		border-bottom: 2px solid #ddd;
-        	}
-        }
+	h2 {
+		font-size: 30px;
+		line-height: 1.5;
+		img {
+			margin-right: 5px;
+			vertical-align: text-bottom;
+			width: 30px;
+			height: 30px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+	h3 {
+		margin: 0 0 20px;
+		font-size: 20px;
+		line-height: 1.5;
 	}
 	div.row {
 		margin-bottom: 20px;
 	}
-	p {
-		@include fontsize(18);
+}
+#BODYCARE {
+	h1 {
+		background-image: url(../images/004.jpg);
 	}
-	p.reserve {
-		text-align: center;
-		.btn {
-			background: $color_second1;
-		    @include background-image(linear-gradient(top, $color_second1, darken($color_second1, 3%)));
-		    @include filter-gradient($color_second1, lighten($color_second1, 10%), vertical);
-		    padding: 15px 40px;
-		}
+}
+#TREATMENT {
+	h1 {
+		background-image: url(../images/044.png);
 	}
-	.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-		background: url(/images/greyfloral.png) repeat;
-		@include box-shadow(rgba(0, 0, 0, 0.2) 0 -6px 15px);
-		font-weight: bold;
-	}
-
-	figure {
-		position: relative;
-		&:after {
-			z-index: -1;
-			position: absolute;
-			content: '';
-			bottom: 10px;
-			left: 10px;
-			width: 50%;
-			top: 80%;
-			max-width: 432px;
-			background: #8d8c8c;
-			-webkit-box-shadow: 0 15px 10px #8d8c8c;
-			-moz-box-shadow: 0 15px 10px #8d8c8c;
-			box-shadow: 0 15px 10px #8d8c8c;
-			-webkit-transform: rotate(-5deg);
-			-moz-transform: rotate(-5deg);
-			-o-transform: rotate(-5deg);
-			-ms-transform: rotate(-5deg);
-			transform: rotate(-5deg);
-		}
-		&:before {
-			z-index: -1;
-			position: absolute;
-			content: '';
-			bottom: 10px;
-			right: 10px;
-			width: 50%;
-			top: 80%;
-			max-width: 432px;
-			background: #8d8c8c;
-			-webkit-box-shadow: 0 15px 10px #8d8c8c;
-			-moz-box-shadow: 0 15px 10px #8d8c8c;
-			box-shadow: 0 15px 10px #8d8c8c;
-			-webkit-transform: rotate(5deg);
-			-moz-transform: rotate(5deg);
-			-o-transform: rotate(5deg);
-			-ms-transform: rotate(5deg);
-			transform: rotate(5deg);
-		}
+}
+#FACIAL {
+	h1 {
+		background-image: url(../images/034.png);
 	}
 }
 #THERAPIST {
-	background: $color_base url(/images/p6.png) repeat;
-	@include fontsize(20);
-	line-height: 1.5;
-	div.profile_table .row {
-		padding-top: 0.5em;
-		border-bottom: 1px dotted $color_main;
+	h1 {
+		background-image: url(../images/008.jpg);
 	}
-}
-#RESERVE {
-	background: $color_base url(/images/tileable_wood_texture.png) repeat;
-	table.fc-border-separate {
-		background-color: $color_base;
-	}
-
 }
 #ACCESS {
-	background: $color_base url(/images/ice_age.png) repeat;
+	h1 {
+		background-image: url(../images/068.jpg);
+	}
+	.map_wrapper {
+	  max-width: 640px;
+	  min-width: 280px;
+	  margin: 20px auto;
+	  padding: 4px;
+	  border: 1px solid #CCC;
+	}
+
+	.googlemap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
 }
