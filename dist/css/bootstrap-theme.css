@@ -1,56 +1,11 @@
-@charset "UTF-8";
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, _sans_selif;
-  text-shadow: 0px 0px 1px rgba(150, 150, 150, 0.1);
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot");
-  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.svg#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-facebook:before {
-  content: "\e600";
-}
-
-.icon-twitter:before {
-  content: "\e601";
-}
-
-.icon-google-plus:before {
-  content: "\e602";
-}
-
-.icon-pinterest:before {
-  content: "\e603";
-}
-
-.icon-tumblr:before {
-  content: "\e604";
-}
-
 /*!
  * Bootstrap v3.0.1 by @fat and @mdo
- * Copyright 2013 Twitter, Inc.
+ * Copyright 2017 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world by @mdo and @fat.
  */
+
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -59,7 +14,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn-danger {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-default:active,
@@ -75,7 +30,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn-warning.active,
 .btn-danger.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn:active,
@@ -225,10 +180,8 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .thumbnail,
 .img-thumbnail {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  border: none;
-  border-radius: 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
 
 .dropdown-menu > li > a:hover,
@@ -264,7 +217,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -275,7 +228,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
   -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
 }
 
 .navbar-brand,
@@ -301,7 +254,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);
   -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-inverse .navbar-brand,
@@ -318,7 +271,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .alert {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .alert-success {
@@ -418,7 +371,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .list-group {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
 
 .list-group-item.active,
@@ -436,7 +389,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .panel {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .panel-default > .panel-heading {
@@ -502,277 +455,5 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border-color: #dcdcdc;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 15px;
-  color: #564826;
-  background-color: #f7f2d3;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: normal;
-}
-
-header {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  background: #292929 url(../images/top_background.jpg) 50% 0 repeat fixed;
-  background-size: cover;
-}
-
-body > header {
-  　height: auto;
-}
-
-.overlay:after {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAL/gYARxgdzQAAkAOOA2IzIHJAAACAGEAFjDBirAAAAAElFTkSuQmCC") repeat top left;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0.6;
-}
-
-.centralized {
-  left: 50%;
-  top: 50%;
-  float: left;
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-}
-
-figure.mb12 {
-  margin-bottom: 12px;
-}
-
-#welcome_content {
-  margin-top: 30px;
-  background: #f7f2d3 url(/images/redox_01.png) repeat;
-  color: #242B3B;
-  border-radius: 10px;
-  padding: 40px;
-  border: 1px dotted #242B3B;
-}
-#welcome_content figure {
-  font-size: 120px;
-}
-#welcome_content h1 {
-  font-size: 30px;
-  margin-top: 0;
-  border-bottom: 1px dotted #ADB9D4;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  color: #616D87;
-}
-#welcome_content p.hishi {
-  margin-top: -51px;
-  text-shadow: 0px 0px 8px #ADB9D4;
-  color: white;
-  font-size: 30px;
-}
-#welcome_content p.text {
-  color: #616D87;
-}
-#welcome_content p.sns {
-  font-size: 30px;
-  margin-top: 30px;
-}
-#welcome_content p.sns a {
-  margin: 0 10px;
-}
-#welcome_content p.sns a:link, #welcome_content p.sns a:visited {
-  color: #877C61;
-}
-#welcome_content p.sns a:hover, #welcome_content p.sns a:active, #welcome_content p.sns a:focus {
-  color: #a0957b;
-}
-#welcome_content p.sns a:link, #welcome_content p.sns a:visited, #welcome_content p.sns a:hover {
-  text-decoration: none;
-}
-
-.navbar {
-  background: #eee url(/images/Texture0203.jpg) repeat;
-  opacity: 0;
-  min-height: 0;
-  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav > li > a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.navbar-brand {
-  padding: 5px 15px;
-}
-
-.navbar-default {
-  border-color: #242B3B;
-  background-color: #f7f2d3;
-  border-bottom-width: 1px;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #242B3B;
-  background-color: transparent;
-  font-weight: bold;
-}
-
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-  color: #242B3B;
-  background-color: transparent;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-brand {
-    padding: 15px;
-  }
-}
-footer {
-  padding: 20px 0;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px inset;
-  background: #877C61 url(/images/bedge_grunge.png) repeat;
-}
-footer h2, footer h3 {
-  font-size: 20px;
-  font-size: 1.25rem;
-  border-bottom: 1px dotted #877C61;
-  padding-bottom: 5px;
-}
-
-#copyright {
-  color: #E9CBCB;
-  line-height: 50px;
-  background: #3B321E url(/images/irongrip.png) repeat;
-  box-shadow: rgba(0, 0, 0, 0.6) 0 5px 10px inset;
-}
-
-.background {
-  background-color: #fff;
-  padding: 100px 0;
-}
-
-.line {
-  margin: 100px auto;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .line {
-    margin: 50px auto;
-  }
-  .line img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.footlogo {
-  text-align: center;
-}
-
-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-section h1 {
-  background-size: cover;
-  height: 250px;
-  background-position: center center;
-  text-align: center;
-  line-height: 250px;
-  color: #fff;
-  text-shadow: 0px 0px 3px #564826;
-  white-space: nowrap;
-}
-@media screen and (max-width: 768px) {
-  section h1 {
-    font-size: 28px;
-    height: 150px;
-    line-height: 150px;
-  }
-}
-section h2 {
-  font-size: 30px;
-  line-height: 1.5;
-}
-section h2 img {
-  margin-right: 5px;
-  vertical-align: text-bottom;
-  width: 30px;
-  height: 30px;
-}
-@media screen and (max-width: 768px) {
-  section h2 {
-    font-size: 22px;
-  }
-}
-section h3 {
-  margin: 0 0 20px;
-  font-size: 20px;
-  line-height: 1.5;
-}
-section div.row {
-  margin-bottom: 20px;
-}
-
-#BODYCARE h1 {
-  background-image: url(../images/004.jpg);
-}
-
-#TREATMENT h1 {
-  background-image: url(../images/044.png);
-}
-
-#FACIAL h1 {
-  background-image: url(../images/034.png);
-}
-
-#THERAPIST h1 {
-  background-image: url(../images/008.jpg);
-}
-
-#RESERVE h1 {
-  background-image: url(../images/049.jpg);
-}
-
-#ACCESS h1 {
-  background-image: url(../images/068.jpg);
-}
-#ACCESS .map_wrapper {
-  max-width: 640px;
-  min-width: 280px;
-  margin: 20px auto;
-  padding: 4px;
-  border: 1px solid #CCC;
-}
-#ACCESS .googlemap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-#ACCESS .googlemap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-/*# sourceMappingURL=custom.css.map */

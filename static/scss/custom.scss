@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "compass";
 @import "variable";
 @import "font";
 @import "mixin";
@@ -24,7 +23,7 @@ header {
 	overflow: hidden;
 	text-align: center;
 	background: #292929 url(../images/top_background.jpg) 50% 0 repeat fixed;
-	@include background-size(cover);
+	background-size:cover;
 }
 body > header{
 　height: auto;
@@ -38,7 +37,7 @@ body > header{
 	bottom: 0;
 	right: 0;
 	left: 0;
-	@include opacity(0.6);
+	opacity:0.6;
 }
 .centralized {
 	left: 50%;
@@ -46,12 +45,17 @@ body > header{
 	float: left;
 	position: relative;
 	visibility: hidden;
-	@include opacity(0);
+	opacity:0;
 }
+figure.mb12 {
+	margin-bottom: 12px;
+}
+
 #welcome_content {
+	margin-top: 30px;
 	background: $color_base url(/images/redox_01.png) repeat;
 	color: #{$color_main};
-	@include border-radius(10px);
+	border-radius:10px;
 	padding: 40px;
 	border: 1px dotted #{$color_main};
 	figure {
@@ -125,7 +129,7 @@ body > header{
 
 footer {
 	padding: 20px 0;
-	@include box-shadow(rgba(0, 0, 0, 0.2) 0 5px 10px inset);
+	box-shadow:rgba(0, 0, 0, 0.2) 0 5px 10px inset;
 	background: #{$color_sub2} url(/images/bedge_grunge.png) repeat;
 	h2, h3 {
 		@include fontsize(20);
@@ -139,7 +143,7 @@ footer {
 	color: #E9CBCB;
 	line-height: 50px;
 	background: #{$color_sub1} url(/images/irongrip.png) repeat;
-	@include box-shadow(rgba(0, 0, 0, 0.6) 0 5px 10px inset);
+	box-shadow:rgba(0, 0, 0, 0.6) 0 5px 10px inset;
 }
 .background {
 	background-color: #fff;
@@ -148,6 +152,13 @@ footer {
 .line {
 	margin: 100px auto;
 	text-align: center;
+	@media screen and (max-width: 768px) {
+		margin: 50px auto;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 .footlogo {
 	text-align: center;
@@ -213,6 +224,12 @@ section {
 		background-image: url(../images/008.jpg);
 	}
 }
+#RESERVE {
+	h1 {
+		background-image: url(../images/049.jpg);
+	}
+}
+
 #ACCESS {
 	h1 {
 		background-image: url(../images/068.jpg);

@@ -130,6 +130,17 @@ module.exports = function(grunt) {
       docs: {}
     },
 
+    sass: {
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+        },
+        files: {                         // Dictionary of files
+          'static/css/custom.css': 'static/scss/custom.scss',       // 'destination': 'source'
+        }
+      }
+    },
+
     validation: {
       options: {
         reset: true,
@@ -155,6 +166,10 @@ module.exports = function(grunt) {
       recess: {
         files: 'less/*.less',
         tasks: ['recess']
+      },
+      sass: {
+        files: 'static/scss/*.*',
+        tasks: ['sass']
       }
     }
   });
@@ -171,6 +186,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-recess');
 
@@ -192,7 +208,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify']);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['recess']);
+  grunt.registerTask('dist-css', ['recess', 'sass']);
 
   // Fonts distribution task.
   grunt.registerTask('dist-fonts', ['copy']);
