@@ -4398,6 +4398,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .container > .navbar-header,
 .container > .navbar-collapse {
+  margin-top: 20px;
+  margin-bottom: -5;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -4640,7 +4642,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #f1e7eb;
   border-color: #e7e7e7;
 }
 
