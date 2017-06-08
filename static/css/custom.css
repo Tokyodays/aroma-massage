@@ -669,12 +669,14 @@ footer h2, footer h3 {
 }
 
 .line {
-  margin: 10px auto;
+  /*margin: 10px auto;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .line {
-    margin: 50px auto;
+    margin: 20px auto;
   }
   .line img {
     width: 100%;
@@ -687,7 +689,7 @@ footer h2, footer h3 {
 }
 
 section {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 section h1 {
@@ -728,7 +730,7 @@ section h3 {
   line-height: 1.5;
 }
 section div.row {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #BODYCARE h1 {
