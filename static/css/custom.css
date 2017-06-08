@@ -510,7 +510,7 @@ html, body {
   width: 100%;
   font-size: 15px;
   color: #564826;
-  background-color: #f7f2d3;
+  background-color: #f1e7eb;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -559,7 +559,7 @@ figure.mb12 {
 
 #welcome_content {
   margin-top: 30px;
-  background: #f7f2d3 url(/images/redox_01.png) repeat;
+  background: #f1e7eb url(/images/redox_01.png) repeat;
   color: #242B3B;
   border-radius: 10px;
   padding: 40px;
@@ -624,7 +624,7 @@ figure.mb12 {
 
 .navbar-default {
   border-color: #242B3B;
-  background-color: #f7f2d3;
+  background-color: #;
   border-bottom-width: 1px;
 }
 
@@ -647,12 +647,12 @@ figure.mb12 {
 footer {
   padding: 20px 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px inset;
-  background: #877C61 url(/images/bedge_grunge.png) repeat;
+  background: #ecd6df url(/images/bedge_grunge.png) repeat;
 }
 footer h2, footer h3 {
   font-size: 20px;
   font-size: 1.25rem;
-  border-bottom: 1px dotted #877C61;
+  border-bottom: 1px dotted #ecd6df;
   padding-bottom: 5px;
 }
 
@@ -669,12 +669,14 @@ footer h2, footer h3 {
 }
 
 .line {
-  margin: 100px auto;
+  /*margin: 10px auto;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .line {
-    margin: 50px auto;
+    margin: 20px auto;
   }
   .line img {
     width: 100%;
@@ -687,7 +689,7 @@ footer h2, footer h3 {
 }
 
 section {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 section h1 {
@@ -728,19 +730,19 @@ section h3 {
   line-height: 1.5;
 }
 section div.row {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #BODYCARE h1 {
-  background-image: url(../images/004.jpg);
+  background-image: url(https://imgbp.hotp.jp/CSP/IMG_SRC_K/82/86/C006088286/C006088286_419-314.jpg);
 }
 
 #TREATMENT h1 {
-  background-image: url(../images/044.png);
+  background-image: url(../images/IMG_3215_1.jpg);
 }
 
 #FACIAL h1 {
-  background-image: url(../images/034.png);
+  background-image: url(../images/nailphoto.png);
 }
 
 #THERAPIST h1 {
