@@ -559,7 +559,7 @@ figure.mb12 {
 
 #welcome_content {
   margin-top: 30px;
-  background: #f7f2d3 url(/images/redox_01.png) repeat;
+  background: #f1e7eb url(/images/redox_01.png) repeat;
   color: #242B3B;
   border-radius: 10px;
   padding: 40px;
@@ -732,15 +732,15 @@ section div.row {
 }
 
 #BODYCARE h1 {
-  background-image: url(../images/004.jpg);
+  background-image: url(https://imgbp.hotp.jp/CSP/IMG_SRC_K/82/86/C006088286/C006088286_419-314.jpg);
 }
 
 #TREATMENT h1 {
-  background-image: url(../images/044.png);
+  background-image: url(../images/IMG_3215.png);
 }
 
 #FACIAL h1 {
-  background-image: url(../images/034.png);
+  background-image: url(../images/nailphoto.png);
 }
 
 #THERAPIST h1 {
