@@ -510,7 +510,7 @@ html, body {
   width: 100%;
   font-size: 15px;
   color: #564826;
-  background-color: #f7f2d3;
+  background-color: #f1e7eb;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -624,7 +624,7 @@ figure.mb12 {
 
 .navbar-default {
   border-color: #242B3B;
-  background-color: #f7f2d3;
+  background-color: #;
   border-bottom-width: 1px;
 }
 
@@ -647,12 +647,12 @@ figure.mb12 {
 footer {
   padding: 20px 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px inset;
-  background: #877C61 url(/images/bedge_grunge.png) repeat;
+  background: #ecd6df url(/images/bedge_grunge.png) repeat;
 }
 footer h2, footer h3 {
   font-size: 20px;
   font-size: 1.25rem;
-  border-bottom: 1px dotted #877C61;
+  border-bottom: 1px dotted #ecd6df;
   padding-bottom: 5px;
 }
 
